@@ -9,7 +9,12 @@ for i in range(len(s1)):
 #print(a)
 for i in a:
     if len(i) == len(s2) and i[0] in s2 and i[len(i)-1] in s2:
-        b.append(i)
+        c = 0
+        for j in i[1:len(i)-1]:
+            if j in s2:
+                c += 1
+        if c == len(s2)-2:
+            b.append(i)
 #print(b)
 print('no of anagrams:',len(b))
 for i in b:
