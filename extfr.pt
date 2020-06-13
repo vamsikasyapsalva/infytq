@@ -1,0 +1,10 @@
+a = ['allx', 'lovex', 'gfg', 'xit', 'is', 'bestx']
+s = 'x'
+b = []
+for i in a:
+    if i[len(i)-1] == s:
+        continue
+    else:
+        b.append(i)
+        
+print(b)
